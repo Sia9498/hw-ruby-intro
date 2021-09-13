@@ -2,8 +2,15 @@
 
 # Part 1
 
-def sum arr
-  # YOUR CODE HERE
+def sum(arr)
+  sumValue = 0
+  counter = 0
+  arrLength = arr.length()
+  while counter < arrLength
+    sumValue += arr[counter]
+    counter += 1
+  end
+  return sumValue
 end
 
 def max_2_sum arr
