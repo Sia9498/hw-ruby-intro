@@ -51,15 +51,30 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  return "Hello, " + name
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  str = s.downcase
+  
+  if str[0] =~ /[a-z]/ && str[0] =~ /[^aeiou]/ 
+    return true
+  else
+    return false
+  end
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  
+   if(s.eql?("0"))
+    return true
+   end
+
+  if s =~ /[^0-1]/
+    return false
+  elsif s =~ /^[10]*00$/
+    return true
+  end
 end
 
 # Part 3
