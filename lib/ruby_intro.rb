@@ -1,6 +1,6 @@
 # When done, submit this entire file to the autograder.
 
-# Part 1
+#--------------Part 1--------------
 
 def sum arr
   counter = 0
@@ -19,10 +19,8 @@ def max_2_sum arr
   
   if arr.length() == 0
     sum_val = 0
-    
   elsif arr.length() == 1
     sum_val = arr[0]
-    
   else
   large_num1 = arr.max()
   index = arr.find_index(large_num1)
@@ -48,7 +46,7 @@ def sum_to_n? arr, n
   
 end
 
-# Part 2
+#--------------Part 2--------------
 
 def hello(name)
   return "Hello, " + name
@@ -62,6 +60,7 @@ def starts_with_consonant? s
   else
     return false
   end
+  
 end
 
 def binary_multiple_of_4? s
@@ -75,12 +74,12 @@ def binary_multiple_of_4? s
   elsif s =~ /^[10]*00$/
     return true
   end
+  
 end
 
-# Part 3
+#--------------Part 3--------------
 
 class BookInStock
-  
 attr_accessor :isbn,  :price
 
 	def initialize isbn, price
@@ -92,4 +91,5 @@ attr_accessor :isbn,  :price
 	def price_as_string
 		return "$%.2f" % price
 	end
+	
 end
